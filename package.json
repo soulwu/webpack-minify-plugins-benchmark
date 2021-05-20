@@ -1,0 +1,25 @@
+{
+  "name": "webpack-minify-plugins-benchmark",
+  "version": "1.0.0",
+  "description": "Run benchmark for webpack minimizer plugins",
+  "repository": "git@github.com:soulwu/webpack-minify-plugins-benchmark.git",
+  "author": "soulwu <longgui.wjb@alibaba-inc.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@dawnjs/eslint-config-dawn": "^3.0.0",
+    "@swc/core": "^1.2.57",
+    "beautify-benchmark": "^0.2.4",
+    "benchmark": "^2.1.4",
+    "benchmarkjs-pretty": "^2.0.1",
+    "esbuild-loader": "^2.13.1",
+    "eslint": "^7.26.0",
+    "prettier": "^2.3.0",
+    "swc-webpack-plugin": "^1.0.0",
+    "terser-webpack-plugin": "^5.1.2",
+    "webpack": "^5.37.1"
+  },
+  "scripts": {
+    "benchmark": "node run-large.js && node run-medium.js"
+  }
+}
